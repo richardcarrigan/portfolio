@@ -6,6 +6,9 @@ body {
 .row {
   margin: 0;
 }
+i.fa {
+  font-size: 1.5em;
+}
 
 /* Header Styles */
 header {
@@ -15,10 +18,10 @@ header {
 }
 
 /* Navbar Styles */
-.navbar {
+nav {
   margin: 0;
 }
-.navbar li {
+nav li {
   text-align: center;
 }
 
@@ -27,11 +30,11 @@ main {
   margin-bottom: 20px;
 }
 main .container-fluid {
-  padding-top: 60px;
+  padding: 60px 10px;
   min-height: 100vh;
 }
 main .row {
-  padding: 15px 0;
+  padding-bottom: 10px;
 }
 
 /* Home Section Styles */
@@ -53,23 +56,16 @@ main .row {
 }
 
 /* Courses Section Styles */
-.container-fluid#courses {
+#courses {
   background-color: lightgreen;
 }
-.course-list {
-  padding-left: 25px;
-}
-#courses ul {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#courses .row {
   padding: 0;
 }
-#courses ul li {
-  flex: 1 0 25%;
-  padding: 10px 25px 10px 0;
+#courses ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Contact Section Styles */
