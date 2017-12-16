@@ -12,39 +12,46 @@
     <script src="https://use.fontawesome.com/758f691c12.js"></script>
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="https://s26.postimg.org/a0qj9ttd5/7_WS5m3r.jpg" class="img-responsive"/>
-        </div>
-        <div class="col-md-6">
-          <h1>Richard Carrigan</h1>
-        </div>
-        <div class="col-md-3">
-          <ul class="social">
-            <li><a href="https://www.linkedin.com/in/richardcarrigan/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="http://codepen.io/nihonjinboy85/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-            <li><a href="https://www.freecodecamp.com/nihonjinboy85" target="_blank"><i class="fa fa-free-code-camp"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home" class="home-link">Home</a></li>
-          <li><a href="#about" class="about-link">About</a></li>
-          <li><a href="#courses" class="courses-link">Courses</a></li>
-          <li><a href="#contact" class="contact-link">Contact</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">
+                Richard Carrigan
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav section-nav">
+              <li id="home-link" class="active"><a href="#home">Home</a></li>
+              <li id="about-link"><a href="#about">About</a></li>
+              <li id="courses-link"><a href="#courses">Courses</a></li>
+              <li id="contact-link"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="row">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="col-xs-4"><a href="https://www.linkedin.com/in/richardcarrigan/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li class="col-xs-4"><a href="http://codepen.io/nihonjinboy85/" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                <li class="col-xs-4"><a href="https://www.freecodecamp.com/nihonjinboy85" target="_blank"><i class="fa fa-free-code-camp"></i></a></li>
+            </ul>
+          </div>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
     </header>
     <main>
       <div class="container-fluid text-center" id="home">
         <div class="container">
-          <div class="row large-text">
-            <p>Hi, I'm Richard. I solve Rubik's cubes, write code, and occasionally run through mud.<br />
-              <a href="#about" class="about-link">Get to know me more &gt;&gt;</a>
-            </p>
-          </div>
+          <h2>Hi, I'm Richard. I solve Rubik's cubes, write code, and occasionally run through mud.</h2>
+          <h3><a href="#about" class="about-link">Get to know me more &gt;&gt;</a></h3>
           <div class="row">
             <a href="#contact" class="contact-link"><button class="btn btn-primary">Send me a message</button></a>
           </div>
@@ -187,13 +194,15 @@
         <div class="container">
           <h2>Contact Me</h2>
           <form>
-            <label>Name</label><br />
-            <input type="text" placeholder="John Smith" /><br />
-            <label>E-mail</label><br />
-            <input type="email" placeholder="john.smith@company.com" /><br />
-            <label>What would you like to say?</label><br />
-            <textarea></textarea><br />
-            <input type="submit" />
+            <div class="form-group">
+              <label>Name</label><br />
+              <input type="text" placeholder="John Smith" class="form-control" /><br />
+              <label>E-mail</label><br />
+              <input type="email" placeholder="john.smith@company.com" class="form-control" /><br />
+              <label>What would you like to say?</label><br />
+              <textarea class="form-control"></textarea><br />
+              <input type="submit" class="btn btn-default"/>
+              </div>
           </form>
         </div>
       </div>
@@ -253,5 +262,6 @@
         </div>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

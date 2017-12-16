@@ -3,77 +3,23 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-li {
-  list-style: none;
-  display: inline-block;
-}
-a {
-  font-weight: bold;
-}
-a:hover {
-  color: black;
-}
-.large-text {
-  font-size: 2em;
+.row {
+  margin: 0;
 }
 
 /* Header Styles */
 header {
-  background-color: rgba(255,255,255,0.7);
-  height: 125px;
-  padding-top: 10px;
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 99;
-}
-header img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-}
-header h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 5em;
-}
-
-/* Social Media Icon Styles */
-.social {
-  font-size: 2.5em;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-}
-.social li {
-  width: 33%;
+  z-index: 1;
 }
 
 /* Navbar Styles */
-nav {
-  margin: 10px 0;
-}
-nav ul {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
+.navbar {
   margin: 0;
-  width: 33%;
 }
-nav li {
+.navbar li {
   text-align: center;
-  width: 25%;
-}
-nav a {
-  display: block;
-  width: 100%;
-}
-nav a:hover {
-  text-decoration: none;
-  border-bottom: 5px solid black;
-  font-weight: bold;
 }
 
 /* Main Container Styles */
@@ -81,8 +27,8 @@ main {
   margin-bottom: 20px;
 }
 main .container-fluid {
-  padding-top: 130px;
-  min-height: 640px;
+  padding-top: 60px;
+  min-height: 100vh;
 }
 main .row {
   padding: 15px 0;
