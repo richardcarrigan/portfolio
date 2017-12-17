@@ -7,7 +7,20 @@ body {
   margin: 0;
 }
 i.fa {
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.light-overlay {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+}
+.dark-overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
 }
 
 /* Header Styles */
@@ -29,9 +42,12 @@ nav li {
 main {
   margin-bottom: 20px;
 }
-main .container-fluid {
+main .container {
   padding: 60px 10px;
   min-height: 100vh;
+}
+main .container-fluid {
+  padding: 0;
 }
 main .row {
   padding-bottom: 10px;
@@ -39,15 +55,19 @@ main .row {
 
 /* Home Section Styles */
 .container-fluid#home {
+  background-image: url("../assets/seattle.jpg");
+  background-size: cover;
   background-color: slategray;
 }
-.showcase img {
+.thumbnail img {
   height: 200px;
   width: 100%;
 }
 
 /* About Section Styles */
 .container-fluid#about {
+  background-image: url("../assets/phantogram.jpg");
+  background-size: cover;
   background-color: tan;
 }
 
@@ -57,6 +77,8 @@ main .row {
 
 /* Courses Section Styles */
 #courses {
+  background-image: url("../assets/dallas.jpg");
+  background-size: cover;
   background-color: lightgreen;
 }
 #courses .row {
@@ -70,6 +92,8 @@ main .row {
 
 /* Contact Section Styles */
 .container-fluid#contact {
+  background-image: url("../assets/beach.jpg");
+  background-size: cover;
   background-color: lightblue;
 }
 
