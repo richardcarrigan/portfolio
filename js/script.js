@@ -7,11 +7,7 @@ $(document).scroll(function() {
   var windowTop = $(window).scrollTop();
   var aboutTop = $("#about").offset().top;
   var coursesTop = $("#courses").offset().top;
-  var contactTop = $("#contact").offset().top;
-  if(contactTop - windowTop <= 0) {
-    $(".section-nav li").removeClass("active");
-    $("#contact-link").addClass("active");
-  } else if (coursesTop - windowTop <= 0) {
+  if (coursesTop - windowTop <= 0) {
     $(".section-nav li").removeClass("active");
     $("#courses-link").addClass("active");
   } else if(aboutTop - windowTop <= 0) {
