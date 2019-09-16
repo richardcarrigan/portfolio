@@ -1,16 +1,38 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio Web Site",
   "main": "index.js",
+  "dependencies": {
+    "material-components-web": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/nihonjinboy85/portfolio"
+    "url": "git+https://github.com/nihonjinboy85/portfolio.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Richard Carrigan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nihonjinboy85/portfolio/issues"
+  },
+  "homepage": "https://github.com/nihonjinboy85/portfolio#readme"
 }
