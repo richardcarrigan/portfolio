@@ -6,23 +6,46 @@
 @import "@material/tab-scroller/mdc-tab-scroller";
 @import "@material/tab-indicator/mdc-tab-indicator";
 @import "@material/tab/mdc-tab";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
 
 /* Reset Styles */
 body {
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-button a {
+a {
     text-decoration: none;
 }
 
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+}
 .mdc-top-app-bar {
     background-color: transparent;
     color: $mdc-theme-primary;
 }
-
 .mdc-top-app-bar__navigation-icon {
     color: $mdc-theme-primary !important;
+}
+.main-content {
+    overflow: auto;
+    height: 100%;
+}
+.section-placeholder {
+    height: 100vh;
+}
+#about {
+    background-color: rgba(0,0,0,0.25);
+}
+#work {
+    background-color: rgba(0,0,0,0.5);
+}
+#contact {
+    background-color: rgba(0,0,0,0.75);
 }

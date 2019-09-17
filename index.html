@@ -19,62 +19,114 @@
     <link rel="stylesheet" href="bundle.css">
   </head>
   <body class="mdc-typography">
-    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-      <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
-          <button class="mdc-button mdc-top-app-bar__title">
-            <a href="#top">
-              <span class="mdc-button__label">Richard Carrigan</span>
-            </a>
-          </button>
-        </section>
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-          <div class="mdc-tab-bar" role="tablist">
-            <div class="mdc-tab-scroller">
-              <div class="mdc-tab-scroller__scroll-area">
-                <div class="mdc-tab-scroller__scroll-content">
-                  <button class="mdc-tab mdc-tab--active">
-                    <span class="mdc-tab__content">
-                      <span class="mdc-tab__text-label">About</span>
-                    </span>
-                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
-                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                    </span>
-                    <span class="mdc-tab__ripple"></span>
-                  </button>
-                  <button class="mdc-tab">
-                    <span class="mdc-tab__content">
-                      <span class="mdc-tab__text-label">Work</span>
-                    </span>
-                    <span class="mdc-tab-indicator">
-                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                    </span>
-                    <span class="mdc-tab__ripple"></span>
-                  </button>
-                  <button class="mdc-tab">
-                    <span class="mdc-tab__content">
-                      <span class="mdc-tab__text-label">Contact</span>
-                    </span>
-                    <span class="mdc-tab-indicator">
-                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-                    </span>
-                    <span class="mdc-tab__ripple"></span>
-                  </button>
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title">Richard Carrigan</h3>
+      </div>
+      <div class="mdc-drawer__content">
+        <div class="mdc-list">
+          <a class="mdc-list-item mdc-list-item--activated" href="#about" aria-current="page">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+            <span class="mdc-list-item__text">About</span>
+          </a>
+          <a class="mdc-list-item" href="#work">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+            <span class="mdc-list-item__text">Work</span>
+          </a>
+          <a class="mdc-list-item" href="#contact">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+            <span class="mdc-list-item__text">Contact</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+            <button class="mdc-button mdc-top-app-bar__title">
+              <a href="#main-content">
+                <span class="mdc-button__label">Richard Carrigan</span>
+              </a>
+            </button>
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <div class="mdc-tab-bar" role="tablist">
+              <div class="mdc-tab-scroller">
+                <div class="mdc-tab-scroller__scroll-area">
+                  <div class="mdc-tab-scroller__scroll-content">
+                    <a href="#about">
+                      <button class="mdc-tab mdc-tab--active">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">About</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </button>
+                    </a>
+                    <a href="#work">
+                      <button class="mdc-tab">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Work</span>
+                        </span>
+                        <span class="mdc-tab-indicator">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </button>
+                    </a>
+                    <a href="#contact">
+                      <button class="mdc-tab">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Contact</span>
+                        </span>
+                        <span class="mdc-tab-indicator">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </header>
-    <main class="mdc-top-app-bar--fixed-adjust">
-      <h1 class="mdc-typography--headline1">I'm Richard Carrigan.</h1>
-      <p>
-        I create responsive web applications with clean, customer-focused, 
-        mobile-first UI designs.
-      </p>
-    </main>
+          </section>
+        </div>
+      </header>
+      <main class="mdc-top-app-bar--fixed-adjust" id="main-content">
+        <div class="section-placeholder">
+          <h1 class="mdc-typography--headline1">I'm Richard Carrigan.</h1>
+          <p>
+            I create responsive web applications with clean, customer-focused, 
+            mobile-first UI designs.
+          </p>
+        </div>
+        <div class="section-placeholder" id="about">
+          <h2 class="mdc-typography--headline2">About Me</h2>
+          <p>
+            This is where I'll talk about myself and convince visitors that I'm qualified.
+          </p>
+        </div>
+        <div class="section-placeholder" id="work">
+          <h2 class="mdc-typography--headline2">My Work</h2>
+          <p>
+            This is where I'll showcase my best projects.
+          </p>
+        </div>
+        <div class="section-placeholder" id="contact">
+          <h2 class="mdc-typography--headline2">Let's Talk</h2>
+          <p>
+            This will be replaced with a contact form so they can hopefully hire me.
+          </p>
+        </div>
+      </main>
+    </div>
     <script src="bundle.js" async></script>
   </body>
 </html>
