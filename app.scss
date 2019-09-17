@@ -16,6 +16,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -33,12 +34,18 @@ a {
 .mdc-top-app-bar__navigation-icon {
     color: $mdc-theme-primary !important;
 }
+.mdc-tab-bar {
+    display: none;
+}
 .main-content {
     overflow: auto;
     height: 100%;
 }
 .section-placeholder {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #about {
     background-color: rgba(0,0,0,0.25);
@@ -48,4 +55,14 @@ a {
 }
 #contact {
     background-color: rgba(0,0,0,0.75);
+}
+
+@media only screen and (min-width: 768px) {
+    .mdc-tab-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mdc-top-app-bar__navigation-icon {
+        display: none;
+    }
 }
