@@ -14,14 +14,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="1T_Mm2-16Onk7cP7AUcnRqPJUNG-QOFcp1EO4J8wQno" />
     <title>Richard Carrigan | Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="bundle.css">
   </head>
-  <body>
-    <h1>I'm Richard Carrigan.</h1>
-    <p>
-      I create responsive web applications with clean, customer-focused, 
-      mobile-first UI designs.
-    </p>
+  <body class="mdc-typography">
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+          <button class="mdc-button mdc-top-app-bar__title">
+            <a href="#top">
+              <span class="mdc-button__label">Richard Carrigan</span>
+            </a>
+          </button>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller">
+              <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+                  <button class="mdc-tab mdc-tab--active">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">About</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button class="mdc-tab">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">Work</span>
+                    </span>
+                    <span class="mdc-tab-indicator">
+                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button class="mdc-tab">
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">Contact</span>
+                    </span>
+                    <span class="mdc-tab-indicator">
+                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+      <h1 class="mdc-typography--headline1">I'm Richard Carrigan.</h1>
+      <p>
+        I create responsive web applications with clean, customer-focused, 
+        mobile-first UI designs.
+      </p>
+    </main>
     <script src="bundle.js" async></script>
   </body>
 </html>

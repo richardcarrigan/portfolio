@@ -1,3 +1,28 @@
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/button/mdc-button";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+
+/* Reset Styles */
 body {
-    color: blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.mdc-top-app-bar {
+    background-color: transparent;
+    color: $mdc-theme-primary;
+}
+
+.mdc-top-app-bar__navigation-icon {
+    color: $mdc-theme-primary !important;
 }
