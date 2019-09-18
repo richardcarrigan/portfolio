@@ -8,6 +8,7 @@
 @import "@material/tab/mdc-tab";
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
+@import "@material/textfield/mdc-text-field";
 
 /* Reset Styles */
 body {
@@ -37,16 +38,18 @@ a {
 .mdc-tab-bar {
     display: none;
 }
-.main-content {
-    overflow: auto;
-    height: 100%;
-}
 .section-placeholder {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.mdc-text-field {
+    background-color: $mdc-theme-on-primary !important;
+    margin: 25px auto;
+    width: 80%;
+}
+
 #about {
     background-color: rgba(0,0,0,0.25);
 }
@@ -55,6 +58,10 @@ a {
 }
 #contact {
     background-color: rgba(0,0,0,0.75);
+    padding-bottom: 50px;
+}
+#social-icons .mdc-button {
+    font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) {

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="bundle.css">
+    <script src="https://kit.fontawesome.com/c7c5ccbc9c.js" crossorigin="anonymous"></script>
   </head>
   <body class="mdc-typography">
     <aside class="mdc-drawer mdc-drawer--modal">
@@ -116,9 +117,49 @@
         </div>
         <div class="section-placeholder" id="contact">
           <h2 class="mdc-typography--headline2">Let's Talk</h2>
-          <p>
-            This will be replaced with a contact form so they can hopefully hire me.
-          </p>
+          <h3 class="mdc-typography--headline3">Send me an e-mail...</h3>
+          <form id="contact-form">
+            <div class="mdc-form-field">
+              <div class="mdc-text-field">
+                <input class="mdc-text-field__input" id="text-field-hero-input">
+                <div class="mdc-line-ripple"></div>
+                <label for="text-field-hero-input" class="mdc-floating-label">Subject</label>
+              </div>
+            </div>
+            <div class="mdc-form-field">
+              <div class="mdc-text-field mdc-text-field--textarea">
+                <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
+                <div class="mdc-notched-outline">
+                  <div class="mdc-notched-outline__leading"></div>
+                  <div class="mdc-notched-outline__notch">
+                    <label for="textarea" class="mdc-floating-label">Message</label>
+                  </div>
+                  <div class="mdc-notched-outline__trailing"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-form-field">
+              <buton class="mdc-button mdc-button--raised">Send</buton>
+            </div>
+          </form>
+          <h3 class="mdc-typography--headline3">...or connect with me through social</h3>
+          <div id="social-icons">
+            <a href="#">
+              <button class="mdc-button">
+                  <i class="fab fa-linkedin-in"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="mdc-button">
+                <i class="fab fa-codepen"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="mdc-button">
+                <i class="fab fa-github"></i>
+              </button>
+            </a>
+          </div>
         </div>
       </main>
     </div>
