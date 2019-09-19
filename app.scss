@@ -11,8 +11,10 @@
 @import "@material/textfield/mdc-text-field";
 
 /* Reset Styles */
-body {
+* {
     box-sizing: border-box;
+}
+body {
     display: flex;
     height: 100vh;
     margin: 0;
@@ -38,11 +40,17 @@ a {
 .mdc-tab-bar {
     display: none;
 }
-.section-placeholder {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.content-section {
+    margin: 0;
+    padding: 50px 10%;
+}
+.avatar {
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto -125px auto;
+    position: relative;
+    top: -125px;
+    width: 150px;
 }
 .mdc-text-field {
     background-color: $mdc-theme-on-primary !important;
@@ -50,6 +58,11 @@ a {
     width: 80%;
 }
 
+#landing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 #about {
     background-color: rgba(0,0,0,0.25);
 }
@@ -58,7 +71,6 @@ a {
 }
 #contact {
     background-color: rgba(0,0,0,0.75);
-    padding-bottom: 50px;
 }
 #social-icons .mdc-button {
     font-size: 2rem;
@@ -71,5 +83,11 @@ a {
     }
     .mdc-top-app-bar__navigation-icon {
         display: none;
+    }
+    .avatar {
+        height: 300px;
+        margin: 0 auto -200px auto;
+        top: -200px;
+        width: 300px;
     }
 }
