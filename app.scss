@@ -16,7 +16,6 @@
 }
 body {
     display: flex;
-    height: 100vh;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -31,7 +30,7 @@ a {
     position: relative;
 }
 .mdc-top-app-bar {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.5);
     color: $mdc-theme-primary;
 }
 .mdc-top-app-bar__navigation-icon {
@@ -44,6 +43,9 @@ a {
     margin: 0;
     padding: 50px 10%;
 }
+.test {
+    background-color: yellow;
+}
 .avatar {
     border-radius: 50%;
     height: 150px;
@@ -51,11 +53,6 @@ a {
     position: relative;
     top: -125px;
     width: 150px;
-}
-.mdc-text-field {
-    background-color: $mdc-theme-on-primary !important;
-    margin: 25px auto;
-    width: 80%;
 }
 
 #landing {
@@ -67,6 +64,10 @@ a {
 }
 #about {
     background-color: rgba(0,0,0,0.25);
+
+    p, li {
+        text-align: left;
+    }
 }
 #work {
     background-color: rgba(0,0,0,0.5);
