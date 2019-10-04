@@ -8,6 +8,14 @@ module.exports = [{
     module: {
         rules: [
             {
+                test: /\.(png|jpg)$/,
+                use: [
+                    {
+                        loader: 'url-loader'
+                    }
+                ]
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     {
