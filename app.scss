@@ -1,3 +1,5 @@
+$mdc-theme-primary: #1e88e5;
+
 @import "@material/typography/mdc-typography";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/icon-button/mdc-icon-button";
@@ -9,6 +11,7 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/card/mdc-card";
+@import "@material/textfield/mdc-text-field";
 
 /* Reset Styles */
 * {
@@ -39,6 +42,9 @@ a {
 .mdc-top-app-bar__navigation-icon {
     color: $mdc-theme-primary !important;
 }
+.mdc-top-app-bar__title a {
+    color: $mdc-theme-primary;
+}
 .mdc-tab-bar {
     display: none;
 }
@@ -54,23 +60,25 @@ a {
     top: -125px;
     width: 150px;
 }
-.project {
-    padding: 15px;
+.mdc-card {
+    margin-bottom: 25px;
 
-    h3 {
-        font-size: 1.5rem;
+    p {
+        text-align: left;
+        padding: 0 10px;
     }
-
-    img {
-        height: auto;
-        max-height: 450px;
-        max-width: 100%;
-        width: auto;
-    }
+}
+.mdc-card__actions {
+    display: flex;
+    justify-content: space-around;
+}
+.mdc-text-field--textarea {
+    background-color: whitesmoke !important;
 }
 
 #landing {
     align-items: center;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     min-height: 150vh;
@@ -81,13 +89,35 @@ a {
 
     p, li {
         text-align: left;
+        line-height: 2rem;
     }
 }
 #work {
     background-color: rgba(0,0,0,0.5);
+
+    #ecommerce_image {
+        background-image: url("./assets/ecommerce_app.jpg");
+    }
+
+    #weather_image {
+        background-image: url("./assets/weather_app.jpg");
+    }
+
+    #pomodoro_image {
+        background-image: url("./assets/pomodoro.jpg");
+    }
 }
 #contact {
     background-color: rgba(0,0,0,0.75);
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form > div, form > button {
+        margin-bottom: 15px;
+    }
 }
 #social-icons .mdc-button {
     font-size: 2rem;
@@ -109,7 +139,19 @@ a {
     }
     .projects {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+
+        .mdc-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1 1 0px;
+            margin: 0 10px;
+        }
+    }
+    
+    #contact form {
+        margin: 0 auto;
+        width: 60%;
     }
 }
