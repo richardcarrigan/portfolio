@@ -106,8 +106,7 @@ a {
 
     #seattle {
         border-style: inset;
-        margin: 0 auto;
-        width: 60%;
+        width: 100%;
         height: auto;
     }
 
@@ -175,6 +174,10 @@ a {
     }
     
     #contact form {
+        margin: 0 auto;
+        width: 60%;
+    }
+    #about #seattle {
         margin: 0 auto;
         width: 60%;
     }
