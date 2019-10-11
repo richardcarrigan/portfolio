@@ -15,27 +15,27 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
 });
 
 let navbar = document.getElementById('navbar');
+const navbarHeight = navbar.offsetHeight;
 
 let sections = document.querySelectorAll('.content-section');
 
 window.onscroll = () => {
     let activeTab = document.querySelector('.mdc-tab--active');
-    let activeTabIndicator = document.querySelector('.mdc-tab-indicator--active');
 
     for(let i = sections.length - 1; i >= 0; i--) {
+        let top = sections[i].getBoundingClientRect().top;
+        let bottom = sections[i].getBoundingClientRect().bottom;
 
-        if(sections[i].getBoundingClientRect().top <= navbar.offsetHeight && sections[i] !== activeTab) {
-            if(activeTab) { 
-                activeTab.classList.remove('mdc-tab--active');
-                activeTabIndicator.classList.remove('mdc-tab-indicator--active');
-            };
-            if(document.getElementById(sections[i].id + '-tab') {
-                const tab = document.getElementById(sections[i].id + '-tab');
-                const tabIndicator = document.getElementById(sections[i].id + '-tab-indicator');
-                tab.classList.add('mdc-tab--active');
-                tabIndicator.classList.add('mdc-tab-indicator--active');
+        if(top <= navbarHeight && bottom > navbarHeight && sections[i] !== activeTab) {
+            if(document.getElementById(sections[i].id + '-tab')) {
+                document.getElementById(sections[i].id + '-tab').classList.add('mdc-tab--active');
+                document.getElementById(sections[i].id + '-tab-indicator').classList.add('mdc-tab-indicator--active');
             }
-            break;
+        } else {
+            if(document.getElementById(sections[i].id + '-tab')) {
+                document.getElementById(sections[i].id + '-tab').classList.remove('mdc-tab--active');
+                document.getElementById(sections[i].id + '-tab-indicator').classList.remove('mdc-tab-indicator--active');
+            }
         }
     }
 };
