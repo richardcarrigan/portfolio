@@ -49,7 +49,7 @@
             <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
             <button class="mdc-button mdc-top-app-bar__title">
               <a href="#main-content">
-                <span class="mdc-button__label">Richard Carrigan</span>
+                <span class="mdc-button__label">Richard<span id="last-name">Carrigan</span></span>
               </a>
             </button>
           </section>
@@ -108,12 +108,13 @@
         <div class="content-section" id="about">
           <image src="./assets/avatar.jpg" alt="Avatar image" class="avatar"></image>
           <h2 class="mdc-typography--headline2">About Me</h2>
+          <img src="./assets/seattle.jpg" alt="Black and white picture of Seattle" id="seattle">
           <p>
-            I've been working as the in-house Wordpress Website Administrator for the past
-            few years, in addition to being the Logistics and Operations Manager since 2012. 
-            Although my professional experience has mainly focused on logistics and inventory 
-            management with a minor amount of web development work, I am now looking to shift 
-            careers into the tech industry, specifically front-end web development.
+            I've been working in the Seattle area as the in-house Wordpress Website Administrator 
+            for the past few years, in addition to being the Logistics and Operations Manager 
+            since 2012. Although my professional experience has mainly focused on logistics and 
+            inventory management with a minor amount of web development work, I am now looking 
+            to shift careers into the tech industry, specifically front-end web development.
           </p>
           <p>
             Most recently, I have been developing single-page web applications using Angular 
@@ -199,16 +200,15 @@
               <label for="email-subject" class="mdc-floating-label">Subject</label>
             </div>
             <div class="mdc-text-field mdc-text-field--textarea">
-              <textarea class="mdc-text-field__input" id="email-body" rows="8"></textarea>
+              <textarea class="mdc-text-field__input" id="email-body" rows="8" placeholder="Message"></textarea>
               <div class="mdc-notched-outline mdc-notched-outline--upgraded">
                 <div class="mdc-notched-outline__leading"></div>
                 <div class="mdc-notched-outline__notch">
-                  <label for="email-body" class="mdc-floating-label">Message</label>
                 </div>
                 <div class="mdc-notched-outline__trailing"></div>
               </div>
             </div>
-            <button class="mdc-button mdc-button--raised">Send</button>
+            <button class="mdc-button mdc-button--raised" id="contact-submit-btn">Send</button>
           </form>
           <h4 class="mdc-typography--headline4">...or connect with me through social</h4>
           <div id="social-icons">

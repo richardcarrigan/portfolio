@@ -14,17 +14,17 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
     drawer.open = !drawer.open;
 });
 
-let navbar = document.getElementById('navbar');
+const navbar = document.getElementById('navbar');
 const navbarHeight = navbar.offsetHeight;
 
-let sections = document.querySelectorAll('.content-section');
+const sections = document.querySelectorAll('.content-section');
 
 window.onscroll = () => {
-    let activeTab = document.querySelector('.mdc-tab--active');
+    const activeTab = document.querySelector('.mdc-tab--active');
 
     for(let i = sections.length - 1; i >= 0; i--) {
-        let top = sections[i].getBoundingClientRect().top;
-        let bottom = sections[i].getBoundingClientRect().bottom;
+        const top = sections[i].getBoundingClientRect().top;
+        const bottom = sections[i].getBoundingClientRect().bottom;
 
         if(top <= navbarHeight && bottom > navbarHeight && sections[i] !== activeTab) {
             if(document.getElementById(sections[i].id + '-tab')) {
@@ -39,3 +39,20 @@ window.onscroll = () => {
         }
     }
 };
+
+const contactSubmitBtn = document.getElementById('contact-submit-btn');
+
+contactSubmitBtn.addEventListener('click', (e) => {
+    const subject = document.getElementById('email-subject');
+    const body = document.getElementById('email-body');
+
+    const email = "mailto:richardcarrigan@hotmail.com?subject=" + subject.value + 
+                    "&body=" + body.value;
+    
+    window.location.href = email;
+
+    subject.value = "";
+    body.value = "";
+
+    e.preventDefault();
+});

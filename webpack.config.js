@@ -8,7 +8,7 @@ module.exports = [{
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(png|jpg|eot|ttf|woff)$/,
                 use: [
                     {
                         loader: 'url-loader'

@@ -13,6 +13,13 @@ $mdc-theme-primary: #1e88e5;
 @import "@material/card/mdc-card";
 @import "@material/textfield/mdc-text-field";
 
+@font-face {
+    font-family: 'Didot';
+    src: url('./assets/ufonts.com_didot.eot'); /* IE9 Compat Modes */
+    src: url('./assets/ufonts.com_didot.woff') format('woff'), /* Pretty Modern Browsers */
+        url('./assets/ufonts.com_didot.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 /* Reset Styles */
 * {
     box-sizing: border-box;
@@ -44,6 +51,12 @@ a {
 }
 .mdc-top-app-bar__title a {
     color: $mdc-theme-primary;
+    font-family: 'Didot', inherit;
+    padding-right: 15px;
+
+    #last-name {
+        font-weight: bold;
+    }
 }
 .mdc-tab-bar {
     display: none;
@@ -83,9 +96,20 @@ a {
     justify-content: center;
     min-height: 150vh;
     padding-bottom: 50vh;
+
+    h1 {
+        text-shadow: 0 0 5px $mdc-theme-primary;
+    }
 }
 #about {
     background-color: rgba(0,0,0,0.25);
+
+    #seattle {
+        border-style: inset;
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+    }
 
     p, li {
         text-align: left;
