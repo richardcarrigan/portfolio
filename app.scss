@@ -14,171 +14,174 @@ $mdc-theme-primary: #1e88e5;
 @import "@material/textfield/mdc-text-field";
 
 @font-face {
-    font-family: 'Didot';
-    src: url('./assets/ufonts.com_didot.eot'); /* IE9 Compat Modes */
-    src: url('./assets/ufonts.com_didot.woff') format('woff'), /* Pretty Modern Browsers */
-        url('./assets/ufonts.com_didot.ttf')  format('truetype') /* Safari, Android, iOS */
+  font-family: "Didot";
+  src: url("./assets/ufonts.com_didot.eot"); /* IE9 Compat Modes */
+  src: url("./assets/ufonts.com_didot.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("./assets/ufonts.com_didot.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
 
 /* Reset Styles */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .mdc-drawer-app-content {
-    flex: auto;
-    overflow: auto;
-    position: relative;
+  flex: auto;
+  overflow: auto;
+  position: relative;
 }
 .mdc-top-app-bar {
-    background-color: rgba(255,255,255,0.5);
-    color: $mdc-theme-primary;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: $mdc-theme-primary;
 }
 .mdc-top-app-bar__navigation-icon {
-    color: $mdc-theme-primary !important;
+  color: $mdc-theme-primary !important;
 }
 .mdc-top-app-bar__title a {
-    color: $mdc-theme-primary;
-    font-family: 'Didot', inherit;
-    padding-right: 15px;
+  color: $mdc-theme-primary;
+  font-family: "Didot", inherit;
+  padding-right: 15px;
 
-    #last-name {
-        font-weight: bold;
-    }
+  #last-name {
+    font-weight: bold;
+  }
 }
 .mdc-tab-bar {
-    display: none;
+  display: none;
 }
 .content-section {
-    margin: 0;
-    padding: 50px 10%;
+  margin: 0;
+  padding: 50px 10%;
 }
 .avatar {
-    border-radius: 50%;
-    height: 150px;
-    margin: 0 auto -125px auto;
-    position: relative;
-    top: -125px;
-    width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 auto -125px auto;
+  position: relative;
+  top: -125px;
+  width: 150px;
 }
 .mdc-card {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    p {
-        text-align: left;
-        padding: 0 10px;
-    }
+  p {
+    text-align: left;
+    padding: 0 10px;
+  }
 }
 .mdc-card__actions {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .mdc-text-field--textarea {
-    background-color: whitesmoke !important;
+  background-color: whitesmoke !important;
 }
 
 #landing {
-    align-items: center;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    min-height: 150vh;
-    padding-bottom: 50vh;
+  align-items: center;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  min-height: 150vh;
+  padding-bottom: 50vh;
 
-    h1 {
-        text-shadow: 1px 1px 5px $mdc-theme-primary;
-    }
+  h1 {
+    text-shadow: 1px 1px 5px $mdc-theme-primary;
+  }
 }
 #about {
-    background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 
-    #seattle {
-        border-style: inset;
-        width: 100%;
-        height: auto;
-    }
+  #seattle {
+    border-style: inset;
+    width: 100%;
+    height: auto;
+  }
 
-    p, li {
-        text-align: left;
-        line-height: 2rem;
-    }
+  p,
+  li {
+    text-align: left;
+    line-height: 2rem;
+  }
 }
 #work {
-    background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
-    #ecommerce_image {
-        background-image: url("./assets/ecommerce_app.jpg");
-    }
+  #ecommerce_image {
+    background-image: url("./assets/ecommerce_app.jpg");
+  }
 
-    #weather_image {
-        background-image: url("./assets/weather_app.jpg");
-    }
+  #weather_image {
+    background-image: url("./assets/weather_app.jpg");
+  }
 
-    #pomodoro_image {
-        background-image: url("./assets/pomodoro.jpg");
-    }
+  #pomodoro_image {
+    background-image: url("./assets/pomodoro.jpg");
+  }
 }
 #contact {
-    background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 
-    form {
-        display: flex;
-        flex-direction: column;
-    }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
-    form > div, form > button {
-        margin-bottom: 15px;
-    }
+  form > div,
+  form > button {
+    margin-bottom: 15px;
+  }
 }
 #social-icons .mdc-button {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-    .mdc-tab-bar {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .mdc-top-app-bar__navigation-icon {
-        display: none;
-    }
-    .avatar {
-        height: 300px;
-        margin: 0 auto -200px auto;
-        top: -200px;
-        width: 300px;
-    }
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
+  .mdc-tab-bar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mdc-top-app-bar__navigation-icon {
+    display: none;
+  }
+  .avatar {
+    height: 300px;
+    margin: 0 auto -200px auto;
+    top: -200px;
+    width: 300px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
 
-        .mdc-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex: 1 1 0px;
-            margin: 0 10px;
-        }
+    .mdc-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1 1 0px;
+      margin: 0 10px;
     }
-    
-    #contact form {
-        margin: 0 auto;
-        width: 60%;
-    }
-    #about #seattle {
-        margin: 0 auto;
-        width: 60%;
-    }
+  }
+
+  #contact form {
+    margin: 0 auto;
+    width: 60%;
+  }
+  #about #seattle {
+    margin: 0 auto;
+    width: 60%;
+  }
 }
