@@ -101,6 +101,22 @@ a {
   background-color: whitesmoke !important;
 }
 
+.iframe-container {
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding-top: 75%; // 4x3 aspect ratio
+  position: relative;
+
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
 #landing {
   align-items: center;
   background-color: whitesmoke;
@@ -130,10 +146,6 @@ a {
 }
 #work {
   background-color: rgba(0, 0, 0, 0.5);
-
-  #featured-project {
-    margin-bottom: 2em;
-  }
 
   #ecommerce_image {
     background-image: url("./assets/ecommerce_app.jpg");
