@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "PortfolioCDN" --name "rcportfolio.azureedge.net" --resource-group "portfolio-website-rg"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "PortfolioCDN" --name "rcportfolio" --resource-group "portfolio-website-rg"
 
   # Azure logout
     - name: logout
