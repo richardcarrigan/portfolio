@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44940754-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-44940754-2');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="1T_Mm2-16Onk7cP7AUcnRqPJUNG-QOFcp1EO4J8wQno" />
+  <title>Richard Carrigan | Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="./dist/bundle.css">
+  <script src="https://kit.fontawesome.com/c7c5ccbc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mdc-typography">
+  <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">Richard Carrigan</h3>
+    </div>
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#about" aria-current="page">
+          <span class="mdc-list-item__text">About</span>
+        </a>
+        <a class="mdc-list-item" href="#work">
+          <span class="mdc-list-item__text">Work</span>
+        </a>
+        <a class="mdc-list-item" href="#contact">
+          <span class="mdc-list-item__text">Contact</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+
+  <div class="mdc-drawer-app-content">
+    <header class="mdc-top-app-bar mdc-top-app-bar--dense" id="navbar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+          <button class="mdc-button mdc-top-app-bar__title">
+            <a href="#main-content">
+              <span class="mdc-button__label">Richard<span id="last-name">Carrigan</span></span>
+            </a>
+          </button>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller">
+              <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+                  <a href="#about">
+                    <button class="mdc-tab" id="about-tab">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">About</span>
+                      </span>
+                      <span class="mdc-tab-indicator" id="about-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+                  </a>
+                  <a href="#work">
+                    <button class="mdc-tab" id="work-tab">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Work</span>
+                      </span>
+                      <span class="mdc-tab-indicator" id="work-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+                  </a>
+                  <a href="#contact">
+                    <button class="mdc-tab" id="contact-tab">
+                      <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Contact</span>
+                      </span>
+                      <span class="mdc-tab-indicator" id="contact-tab-indicator">
+                        <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                      </span>
+                      <span class="mdc-tab__ripple"></span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="mdc-top-app-bar--dense-adjust" id="main-content">
+      <div class="content-section" id="landing">
+        <h1 class="mdc-typography--headline1 animated lightSpeedIn delay-1s">
+          Nice to meet you!
+        </h1>
+      </div>
+
+      <div class="content-section" id="about">
+        <image src="../assets/avatar.jpg" alt="Avatar image" class="avatar"></image>
+        <h2 class="mdc-typography--headline2">About Me</h2>
+        <p>
+          I've been working in the Seattle area as the Technical Program Manager for the
+          Microsoft Leap Apprenticeship Program since 2020. Prior to that, I was the in-house
+          Wordpress Website Administrator at a small manufacturing & retail company, with two
+          branded product websites, www.triad-orbit.com and www.accessbagsandcases.com.
+        </p>
+        <img src="../assets/seattle.jpg" alt="Black and white picture of Seattle" id="seattle">
+        <p>
+          Most recently, I have been developing single-page web applications using React,
+          Material UI, and GraphQL. I've also been getting really into DevOps and Azure Cloud
+          administration and development. I'm also skilled in a wide range of web technologies
+          from HTML, CSS, and JavaScript as well as various other tools such as TypeScript, SASS,
+          Node.js, Express, SQL, and MongoDB.
+        </p>
+        <a href="../assets/richard_carrigan_resume.pdf" target="_blank"><button class="mdc-button mdc-button--raised"
+            id="resume-btn">View Resume</button></a>
+      </div>
+
+      <div class="content-section" id="work">
+        <h2 class="mdc-typography--headline2">My Work</h2>
+
+        <div class="iframe-container">
+          <iframe title="FCC D3 Choropleth Map"
+            src="https://codepen.io/nihonjinboy85/embed/WNvMYEM?height=265&theme-id=dark&default-tab=result"
+            frameborder="no" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href='https://codepen.io/nihonjinboy85/pen/WNvMYEM'>FCC D3 Choropleth Map</a> by Richard
+            Carrigan
+            (<a href='https://codepen.io/nihonjinboy85'>@nihonjinboy85</a>) on <a href='https://codepen.io'>CodePen</a>.
+          </iframe>
+        </div>
+
+        <div class="projects">
+          <div class="mdc-card">
+            <div class="mdc-card__primary-action" tabindex="0">
+              <div id="ecommerce_image" class="mdc-card__media mdc-card__media--square"></div>
+              <div>
+                <h2 class="mdc-typography--headline6">The MEAN Store</h2>
+              </div>
+              <div class="mdc-typography--body2">
+                <p>An e-commerce application using MongoDB, Express, Angular, and Node with a Material Design UI</p>
+              </div>
+            </div>
+            <div class="mdc-card__actions">
+              <a href="https://the-mean-store.herokuapp.com"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Demo</button></a>
+              <a href="https://github.com/nihonjinboy85/ecommerce-mean-app"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Source</button></a>
+            </div>
+          </div>
+
+          <div class="mdc-card">
+            <div class="mdc-card__primary-action" tabindex="0">
+              <div id="weather_image" class="mdc-card__media mdc-card__media--square"></div>
+              <div>
+                <h2 class="mdc-typography--headline6">Richard's Weather</h2>
+              </div>
+              <div class="mdc-typography--body2">
+                <p>A weather app using the Geolocation and Open Weather API's, jQuery, and Bootstrap</p>
+              </div>
+            </div>
+            <div class="mdc-card__actions">
+              <a href="https://codepen.io/nihonjinboy85/full/LRWwxg"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Demo</button></a>
+              <a href="https://codepen.io/nihonjinboy85/pen/LRWwxg"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Source</button></a>
+            </div>
+          </div>
+
+          <div class="mdc-card">
+            <div class="mdc-card__primary-action" tabindex="0">
+              <div id="pomodoro_image" class="mdc-card__media mdc-card__media--square"></div>
+              <div>
+                <h2 class="mdc-typography--headline6">Pomodoro Clock</h2>
+              </div>
+              <div class="mdc-typography--body2">
+                <p>A continuous clock that alternates between the session and break using React</p>
+              </div>
+            </div>
+            <div class="mdc-card__actions">
+              <a href="https://codepen.io/nihonjinboy85/full/aeJzoV"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Demo</button></a>
+              <a href="https://codepen.io/nihonjinboy85/pen/aeJzoV"><button
+                  class="mdc-button mdc-card__action mdc-card__action--button">Source</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-section" id="contact">
+        <h2 class="mdc-typography--headline2">Send me an email</h2>
+        <form>
+          <div class="mdc-text-field">
+            <input class="mdc-text-field__input" id="email-subject">
+            <div class="mdc-line-ripple"></div>
+            <label for="email-subject" class="mdc-floating-label">Subject</label>
+          </div>
+          <div class="mdc-text-field mdc-text-field--textarea">
+            <textarea class="mdc-text-field__input" id="email-body" rows="8" placeholder="Message"></textarea>
+            <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+              <div class="mdc-notched-outline__leading"></div>
+              <div class="mdc-notched-outline__notch">
+              </div>
+              <div class="mdc-notched-outline__trailing"></div>
+            </div>
+          </div>
+          <button class="mdc-button mdc-button--raised" id="contact-submit-btn">Send</button>
+        </form>
+        <h4 class="mdc-typography--headline4">...or connect with me through social</h4>
+        <div id="social-icons">
+          <a href="https://www.linkedin.com/in/richardcarrigan" target="_blank">
+            <button class="mdc-button">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </a>
+          <a href="https://codepen.io/nihonjinboy85" target="_blank">
+            <button class="mdc-button">
+              <i class="fab fa-codepen"></i>
+            </button>
+          </a>
+          <a href="https://github.com/nihonjinboy85" target="_blank">
+            <button class="mdc-button">
+              <i class="fab fa-github"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,54 +1,30 @@
-const autoprefixer = require("autoprefixer");
+const path = require('path');
 
 module.exports = [
   {
-    entry: ["./app.scss", "./app.js"],
+    entry: ['./src/index.js'],
+    mode: 'development',
     output: {
-      filename: "bundle.js"
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist')
     },
     module: {
       rules: [
         {
-          test: /\.(png|jpg|eot|ttf|woff)$/,
-          use: [
-            {
-              loader: "url-loader"
-            }
-          ]
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader']
         },
         {
-          test: /\.scss$/,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: "bundle.css"
-              }
-            },
-            { loader: "extract-loader" },
-            { loader: "css-loader" },
-            {
-              loader: "postcss-loader",
-              options: {
-                plugins: () => [autoprefixer()]
-              }
-            },
-            {
-              loader: "sass-loader",
-              options: {
-                sassOptions: {
-                  includePaths: ["./node_modules"]
-                }
-              }
-            }
-          ]
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource'
         },
         {
-          test: /\.js$/,
-          loader: "babel-loader",
-          query: {
-            presets: ["@babel/preset-env"]
-          }
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          type: 'asset/resource'
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          use: ['style-loader', 'css-loader', 'sass-loader']
         }
       ]
     }
