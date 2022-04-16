@@ -1,3 +1,5 @@
+import { CssBaseline, Box } from '@mui/material';
+
 import Header from './components/Header';
 import Landing from './components/Landing';
 import About from './components/About';
@@ -7,13 +9,14 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className='App'>
+      <CssBaseline />
       <Header />
-      <main className='mdc-top-app-bar--dense-adjust' id='main-content'>
+      <Box component='main'>
         <Landing />
         <About />
         <Work />
         <Contact />
-      </main>
+      </Box>
     </div>
   );
 }

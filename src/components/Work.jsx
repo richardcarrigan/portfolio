@@ -3,16 +3,16 @@ import Projects from './Projects';
 
 export default function Work() {
   return (
-    <div className='content-section' id='work'>
+    <section id='work'>
       <Typography variant='h2'>My Work</Typography>
 
       <div className='iframe-container'>
         <iframe
           title='FCC D3 Choropleth Map'
           src='https://codepen.io/nihonjinboy85/embed/WNvMYEM?height=265&theme-id=dark&default-tab=result'
-          frameborder='no'
+          frameBorder='no'
           allowtransparency='true'
-          allowfullscreen='true'
+          allowFullScreen={true}
         >
           See the Pen{' '}
           <a href='https://codepen.io/nihonjinboy85/pen/WNvMYEM'>
@@ -25,6 +25,6 @@ export default function Work() {
       </div>
 
       <Projects />
-    </div>
+    </section>
   );
 }

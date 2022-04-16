@@ -5,7 +5,7 @@ import resumeFile from '../assets/richard_carrigan_resume.pdf';
 
 export default function About() {
   return (
-    <div className='content-section' id='about'>
+    <section className='content-section' id='about'>
       <img src={avatarImage} alt='Avatar' className='avatar' />
       <Typography variant='h2'>About Me</Typography>
       <p>
@@ -29,6 +29,6 @@ export default function About() {
           View Resume
         </Button>
       </a>
-    </div>
+    </section>
   );
 }

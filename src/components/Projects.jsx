@@ -1,25 +1,34 @@
-import { Card, Typography, Button } from '@mui/material';
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Typography,
+  Button
+} from '@mui/material';
+import ecommerceImage from '../assets/ecommerce_app.jpg';
+import weatherImage from '../assets/weather_app.jpg';
+import pomodoroImage from '../assets/pomodoro.jpg';
 
 export default function Projects() {
   return (
     <div className='projects'>
       <Card>
-        <div className='mdc-card__primary-action' tabindex='0'>
-          <div
-            id='ecommerce_image'
-            className='mdc-card__media mdc-card__media--square'
-          ></div>
-          <div>
-            <Typography variant='h6'>The MEAN Store</Typography>
-          </div>
-          <Typography variant='body2'>
-            <p>
-              An e-commerce application using MongoDB, Express, Angular, and
-              Node with a Material Design UI
-            </p>
+        <CardMedia
+          component='img'
+          image={ecommerceImage}
+          alt='Ecommerce app screenshot'
+        />
+        <CardContent>
+          <Typography gutterBottom variant='h6' component='div'>
+            The MEAN Store
           </Typography>
-        </div>
-        <div className='mdc-card__actions'>
+          <Typography variant='body2' color='text.secondary'>
+            An e-commerce application using MongoDB, Express, Angular, and Node
+            with a Material Design UI
+          </Typography>
+        </CardContent>
+        <CardActions>
           <a href='https://the-mean-store.herokuapp.com'>
             <Button className='mdc-card__action mdc-card__action--button'>
               Demo
@@ -30,25 +39,24 @@ export default function Projects() {
               Source
             </Button>
           </a>
-        </div>
+        </CardActions>
       </Card>
       <Card>
-        <div className='mdc-card__primary-action' tabindex='0'>
-          <div
-            id='weather_image'
-            className='mdc-card__media mdc-card__media--square'
-          ></div>
-          <div>
-            <Typography variant='h6'>Richard's Weather</Typography>
-          </div>
-          <Typography variant='body2'>
-            <p>
-              A weather app using the Geolocation and Open Weather API's,
-              jQuery, and Bootstrap
-            </p>
+        <CardMedia
+          component='img'
+          image={weatherImage}
+          alt='Weather app screenshot'
+        />
+        <CardContent>
+          <Typography gutterBottom variant='h6' component='div'>
+            Richard's Weather
           </Typography>
-        </div>
-        <div className='mdc-card__actions'>
+          <Typography variant='body2' color='text.secondary'>
+            A weather app using the Geolocation and Open Weather API's, jQuery,
+            and Bootstrap
+          </Typography>
+        </CardContent>
+        <CardActions>
           <a href='https://codepen.io/nihonjinboy85/full/LRWwxg'>
             <Button className='mdc-card__action mdc-card__action--button'>
               Demo
@@ -59,25 +67,24 @@ export default function Projects() {
               Source
             </Button>
           </a>
-        </div>
+        </CardActions>
       </Card>
       <Card>
-        <div className='mdc-card__primary-action' tabindex='0'>
-          <div
-            id='pomodoro_image'
-            className='mdc-card__media mdc-card__media--square'
-          ></div>
-          <div>
-            <Typography variant='h6'>Pomodoro Clock</Typography>
-          </div>
-          <Typography variant='body2'>
-            <p>
-              A continuous clock that alternates between the session and break
-              using React
-            </p>
+        <CardMedia
+          component='img'
+          image={pomodoroImage}
+          alt='Weather app screenshot'
+        />
+        <CardContent>
+          <Typography gutterBottom variant='h6' component='div'>
+            Pomodoro Clock
           </Typography>
-        </div>
-        <div className='mdc-card__actions'>
+          <Typography variant='body2' color='text.secondary'>
+            A continuous clock that alternates between the session and break
+            using React
+          </Typography>
+        </CardContent>
+        <CardActions>
           <a href='https://codepen.io/nihonjinboy85/full/aeJzoV'>
             <Button className='mdc-card__action mdc-card__action--button'>
               Demo
@@ -88,7 +95,7 @@ export default function Projects() {
               Source
             </Button>
           </a>
-        </div>
+        </CardActions>
       </Card>
     </div>
   );
