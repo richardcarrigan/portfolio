@@ -19,7 +19,8 @@ export default function Contact() {
   return (
     <section id='contact'>
       <Typography variant='h2'>Contact me</Typography>
-      <form name='contact' data-netlify='true' onSubmit={submitForm}>
+      <form name='contact' netlify onSubmit={submitForm}>
+        <TextField label='Name' type='text' required />
         <TextField label='Email' type='email' required />
         <TextField
           label='Message'
@@ -28,7 +29,7 @@ export default function Contact() {
           rows='8'
           required
         />
-        <Button variant='contained' id='contact-submit-btn' type='Submit'>
+        <Button variant='contained' id='contact-submit-btn' type='submit'>
           Send
         </Button>
       </form>
