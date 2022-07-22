@@ -10,7 +10,7 @@ export default function Contact() {
       <form name='contact' method='POST' netlify>
         <input type='hidden' name='form-name' value='contact' />
         <TextField label='Name' name='name' type='text' required />
-        <TextField label='Email' name='name' type='email' required />
+        <TextField label='Email' name='email' type='email' required />
         <TextField
           label='Message'
           name='message'
