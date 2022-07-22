@@ -1,0 +1,142 @@
+:root {
+  --mdc-theme-primary: #1e88e5;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('./assets/ufonts.com_didot.eot');
+  src: url('./assets/ufonts.com_didot.woff') format('woff');
+  src: url('./assets/ufonts.com_didot.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+#last-name {
+  font-weight: bold;
+}
+section {
+  margin: 0;
+  padding: 50px 10%;
+}
+.avatar {
+  border-radius: 50%;
+  height: 150px;
+  margin: 0 auto -125px auto;
+  position: relative;
+  top: -125px;
+  width: 150px;
+}
+.codepen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 1em 0 2em 0;
+  padding: 1em;
+}
+
+.iframe-container {
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding-top: 75%; /* 4x3 aspect ratio */
+  position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#landing {
+  align-items: center;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  min-height: 150vh;
+  padding-bottom: 50vh;
+}
+#landing h1 {
+  text-shadow: 1px 1px 5px var(--mdc-theme-primary);
+}
+#about {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#about #seattle {
+  border-style: inset;
+  width: 100%;
+  height: auto;
+}
+#about p {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 2rem;
+}
+#work {
+  background-color: whitesmoke;
+}
+#contact {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact form > div,
+#contact form > button {
+  margin-bottom: 15px;
+}
+.projects > div {
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+  .avatar {
+    height: 300px;
+    margin: 0 auto -200px auto;
+    top: -200px;
+    width: 300px;
+  }
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #contact form {
+    margin: 0 auto;
+    width: 60%;
+  }
+  #about #seattle {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
