@@ -3,14 +3,32 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+const submitForm = e => {
+  e.preventDefault();
+  e.target.style.visibility = 'hidden';
+  e.target.previousSibling.innerHTML = 'Thanks!';
+  e.target.reset();
+
+  setTimeout(() => {
+    e.target.style.visibility = 'visible';
+    e.target.previousSibling.innerHTML = 'Contact me';
+  }, 1000);
+};
+
 export default function Contact() {
   return (
     <section id='contact'>
-      <Typography variant='h2'>Send me an email</Typography>
-      <form>
-        <TextField label='Subject' type='input' />
-        <TextField label='Message' multiline id='email-body' rows='8' />
-        <Button variant='contained' id='contact-submit-btn'>
+      <Typography variant='h2'>Contact me</Typography>
+      <form name='contact' data-netlify='true' onSubmit={submitForm}>
+        <TextField label='Email' type='email' required />
+        <TextField
+          label='Message'
+          multiline
+          id='email-body'
+          rows='8'
+          required
+        />
+        <Button variant='contained' id='contact-submit-btn' type='Submit'>
           Send
         </Button>
       </form>
