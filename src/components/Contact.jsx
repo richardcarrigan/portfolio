@@ -3,27 +3,17 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const submitForm = e => {
-  e.preventDefault();
-  e.target.style.visibility = 'hidden';
-  e.target.previousSibling.innerHTML = 'Thanks!';
-  e.target.reset();
-
-  setTimeout(() => {
-    e.target.style.visibility = 'visible';
-    e.target.previousSibling.innerHTML = 'Contact me';
-  }, 1000);
-};
-
 export default function Contact() {
   return (
     <section id='contact'>
       <Typography variant='h2'>Contact me</Typography>
-      <form name='contact' netlify onSubmit={submitForm}>
-        <TextField label='Name' type='text' required />
-        <TextField label='Email' type='email' required />
+      <form name='contact' method='POST' netlify>
+        <input type='hidden' name='form-name' value='contact' />
+        <TextField label='Name' name='name' type='text' required />
+        <TextField label='Email' name='name' type='email' required />
         <TextField
           label='Message'
+          name='message'
           multiline
           id='email-body'
           rows='8'
