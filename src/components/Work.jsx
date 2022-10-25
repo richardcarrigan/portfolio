@@ -5,25 +5,6 @@ export default function Work() {
   return (
     <section id='work'>
       <Typography variant='h2'>My Work</Typography>
-
-      <div className='iframe-container'>
-        <iframe
-          title='FCC D3 Choropleth Map'
-          src='https://codepen.io/nihonjinboy85/embed/WNvMYEM?height=265&theme-id=dark&default-tab=result'
-          frameBorder='no'
-          allowtransparency='true'
-          allowFullScreen={true}
-        >
-          See the Pen{' '}
-          <a href='https://codepen.io/nihonjinboy85/pen/WNvMYEM'>
-            FCC D3 Choropleth Map
-          </a>{' '}
-          by Richard Carrigan (
-          <a href='https://codepen.io/nihonjinboy85'>@nihonjinboy85</a>) on{' '}
-          <a href='https://codepen.io'>CodePen</a>.
-        </iframe>
-      </div>
-
       <Projects />
     </section>
   );
