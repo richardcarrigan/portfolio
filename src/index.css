@@ -1,5 +1,5 @@
 :root {
-  --bg-primary: 30, 136, 229;
+  --bg-primary: 24, 115, 195;
   --mdc-theme-primary: rgb(var(--bg-primary));
 }
 
@@ -8,6 +8,15 @@
   src: url('./assets/ufonts.com_didot.eot');
   src: url('./assets/ufonts.com_didot.woff') format('woff');
   src: url('./assets/ufonts.com_didot.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--mdc-theme-primary);
+  text-decoration: none;
 }
 
 body {
@@ -26,33 +35,38 @@ code {
     monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
 html {
   scroll-behavior: smooth;
 }
-a {
-  color: var(--mdc-theme-primary);
-  text-decoration: none;
-}
 
-#last-name {
-  font-weight: bold;
-}
 section {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 50px 10%;
 }
+
 section * {
   max-width: 2160px;
 }
+
 .avatar {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+}
+
+.projects > div {
+  margin-bottom: 15px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact form > div,
+#contact form > button {
+  margin-bottom: 15px;
 }
 
 #landing {
@@ -66,24 +80,13 @@ section * {
   width: 100%;
   height: auto;
 }
-#about p {
-  font-size: 1.5rem;
-  text-align: left;
-  line-height: 2rem;
+
+#last-name {
+  font-weight: bold;
 }
+
 #work {
   background-color: rgba(var(--bg-primary), 0.25);
-}
-#contact form {
-  display: flex;
-  flex-direction: column;
-}
-#contact form > div,
-#contact form > button {
-  margin-bottom: 15px;
-}
-.projects > div {
-  margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -102,6 +105,7 @@ section * {
     margin: 0 auto;
     width: 60%;
   }
+
   #landing #seattle {
     margin: 0 auto;
     width: 60%;
