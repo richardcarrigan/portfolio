@@ -3,24 +3,24 @@ import {
   AppBar,
   Box,
   Button,
-  // Container,
   Divider,
   Drawer,
   IconButton,
+  Link,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  // Menu,
-  // MenuIcon,
-  // MenuItem,
   Toolbar,
   Typography
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const drawerWidth = 240;
-const navItems = ['Work', 'Contact'];
+const navItems = ['Work', 'Contact', 'Blog'];
 
 export default function Header(props) {
   const { window } = props;
@@ -40,13 +40,45 @@ export default function Header(props) {
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Button href={`#${item.toLowerCase()}`}>
+              <Button
+                href={
+                  item.toLowerCase() === 'blog'
+                    ? `https://blog.richardcarrigan.dev`
+                    : `#${item.toLowerCase()}`
+                }
+              >
                 <ListItemText primary={item} />
               </Button>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+      <div class='social'>
+        <Link
+          href='https://twitter.com/Rich_Carrigan'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='Twitter'
+        >
+          <TwitterIcon />
+        </Link>
+        <Link
+          href='https://www.linkedin.com/in/richardcarrigan'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='LinkedIn'
+        >
+          <LinkedInIcon />
+        </Link>
+        <Link
+          href='https://github.com/nihonjinboy85'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='Github'
+        >
+          <GitHubIcon />
+        </Link>
+      </div>
     </Box>
   );
 
@@ -62,23 +94,54 @@ export default function Header(props) {
             aria-label='open drawer'
             edge='start'
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
             Richard <span id='last-name'>Carrigan</span>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             {navItems.map(item => (
               <Button
-                href={`#${item.toLowerCase()}`}
+                href={
+                  item.toLowerCase() === 'blog'
+                    ? `https://blog.richardcarrigan.dev`
+                    : `#${item.toLowerCase()}`
+                }
                 key={item}
                 sx={{ color: '#fff' }}
               >
                 {item}
               </Button>
             ))}
+            <Button
+              sx={{ color: '#fff' }}
+              href='https://twitter.com/Rich_Carrigan'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Twitter'
+            >
+              <TwitterIcon />
+            </Button>
+            <Button
+              sx={{ color: '#fff' }}
+              href='https://www.linkedin.com/in/richardcarrigan'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='LinkedIn'
+            >
+              <LinkedInIcon />
+            </Button>
+            <Button
+              sx={{ color: '#fff' }}
+              href='https://github.com/nihonjinboy85'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Github'
+            >
+              <GitHubIcon />
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
@@ -92,7 +155,7 @@ export default function Header(props) {
             keepMounted: true // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', md: 'none' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth
@@ -105,13 +168,3 @@ export default function Header(props) {
     </Box>
   );
 }
-
-//                 <Button href={`#${page.toLowerCase()}`}>{page}</Button>
-//             <Button
-//               key={page}
-//               href={`#${page.toLowerCase()}`}
-//               onClick={handleCloseNavMenu}
-//               sx={{ my: 2, color: 'white', display: 'block' }}
-//             >
-//               {page}
-//             </Button>

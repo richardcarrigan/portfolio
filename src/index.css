@@ -59,6 +59,13 @@ section * {
 .projects > div {
   margin-bottom: 15px;
 }
+.social {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 #contact form {
   display: flex;
