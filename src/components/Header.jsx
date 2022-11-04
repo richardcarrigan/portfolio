@@ -66,7 +66,7 @@ export default function Header(props) {
           <LinkedInIcon />
         </Link>
         <Link
-          href='https://github.com/nihonjinboy85'
+          href='https://github.com/richardcarrigan'
           target='_blank'
           rel='noreferrer'
           aria-label='Github'
@@ -154,7 +154,7 @@ export default function Header(props) {
             </Button>
             <Button
               sx={{ color: '#fff' }}
-              href='https://github.com/nihonjinboy85'
+              href='https://github.com/richardcarrigan'
               target='_blank'
               rel='noreferrer'
               aria-label='Github'

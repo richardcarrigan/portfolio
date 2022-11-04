@@ -1,5 +1,5 @@
 import { Button } from '@mui/material';
-import resumeFile from '../assets/richard_carrigan_resume.pdf';
+import resumeFile from '../assets/richard_carrigan_software_developer_resume.pdf';
 import avatarImage from '../assets/avatar.jpg';
 
 export default function Landing() {
