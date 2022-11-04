@@ -105,7 +105,7 @@ section * {
     width: 100%;
   }
   .projects > div {
-    max-width: 30%;
+    max-width: 45%;
   }
 
   #contact form {

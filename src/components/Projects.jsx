@@ -6,18 +6,50 @@ import {
   Typography,
   Button
 } from '@mui/material';
-import ecommerceImage from '../assets/ecommerce_app.jpg';
-import weatherImage from '../assets/weather_app.jpg';
-import pomodoroImage from '../assets/pomodoro.jpg';
 
 export default function Projects() {
   return (
     <div className='projects'>
       <Card>
         <CardMedia
-          component='img'
-          image={ecommerceImage}
-          alt='Ecommerce app screenshot'
+          component='iframe'
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/x6m4_7nddz4'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen='true'
+        />
+        <CardContent>
+          <Typography gutterBottom variant='h6' component='div'>
+            Pers
+          </Typography>
+          <Typography variant='body2' color='text.secondary'>
+            A financial app I'm currently building so I can track forecasted
+            income and expenses, allowing me to see exactly how much money I'll
+            have on any given date. Uses React, Apollo GraphQL (client and
+            server), Node.js, and MongoDB.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <a href='https://github.com/richardcarrigan/pers'>
+            <Button className='mdc-card__action mdc-card__action--button'>
+              Source
+            </Button>
+          </a>
+        </CardActions>
+      </Card>
+      <Card>
+        <CardMedia
+          component='iframe'
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/o1Mbk7e-F90'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen='true'
         />
         <CardContent>
           <Typography gutterBottom variant='h6' component='div'>
@@ -34,7 +66,7 @@ export default function Projects() {
               Demo
             </Button>
           </a>
-          <a href='https://github.com/nihonjinboy85/ecommerce-mean-app'>
+          <a href='https://github.com/richardcarrigan/ecommerce-mean-app'>
             <Button className='mdc-card__action mdc-card__action--button'>
               Source
             </Button>
@@ -43,9 +75,14 @@ export default function Projects() {
       </Card>
       <Card>
         <CardMedia
-          component='img'
-          image={weatherImage}
-          alt='Weather app screenshot'
+          component='iframe'
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/l8f5VuLc2XE'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen='true'
         />
         <CardContent>
           <Typography gutterBottom variant='h6' component='div'>
@@ -63,34 +100,6 @@ export default function Projects() {
             </Button>
           </a>
           <a href='https://codepen.io/nihonjinboy85/pen/LRWwxg'>
-            <Button className='mdc-card__action mdc-card__action--button'>
-              Source
-            </Button>
-          </a>
-        </CardActions>
-      </Card>
-      <Card>
-        <CardMedia
-          component='img'
-          image={pomodoroImage}
-          alt='Weather app screenshot'
-        />
-        <CardContent>
-          <Typography gutterBottom variant='h6' component='div'>
-            Pomodoro Clock
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            A continuous clock that alternates between the session and break
-            using React
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <a href='https://codepen.io/nihonjinboy85/full/aeJzoV'>
-            <Button className='mdc-card__action mdc-card__action--button'>
-              Demo
-            </Button>
-          </a>
-          <a href='https://codepen.io/nihonjinboy85/pen/aeJzoV'>
             <Button className='mdc-card__action mdc-card__action--button'>
               Source
             </Button>

@@ -18,9 +18,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import BookIcon from '@mui/icons-material/Book';
 
 const drawerWidth = 240;
-const navItems = ['Work', 'Contact', 'Blog'];
+const navItems = ['Work', 'Contact'];
 
 export default function Header(props) {
   const { window } = props;
@@ -40,13 +41,7 @@ export default function Header(props) {
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <Button
-                href={
-                  item.toLowerCase() === 'blog'
-                    ? `https://blog.richardcarrigan.dev`
-                    : `#${item.toLowerCase()}`
-                }
-              >
+              <Button href={`#${item.toLowerCase()}`}>
                 <ListItemText primary={item} />
               </Button>
             </ListItemButton>
@@ -78,6 +73,14 @@ export default function Header(props) {
         >
           <GitHubIcon />
         </Link>
+        <Link
+          href='https://blog.richardcarrigan.dev'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='Blog'
+        >
+          <BookIcon />
+        </Link>
       </div>
     </Box>
   );
@@ -88,7 +91,9 @@ export default function Header(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component='nav'>
-        <Toolbar>
+        <Toolbar
+          sx={{ display: { md: 'flex' }, justifyContent: 'space-between' }}
+        >
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -101,7 +106,13 @@ export default function Header(props) {
           <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
             Richard <span id='last-name'>Carrigan</span>
           </Typography>
-          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          <Box
+            sx={{
+              display: { xs: 'none', md: 'flex' },
+              width: '33%',
+              justifyContent: 'center'
+            }}
+          >
             {navItems.map(item => (
               <Button
                 href={
@@ -115,6 +126,14 @@ export default function Header(props) {
                 {item}
               </Button>
             ))}
+          </Box>
+          <Box
+            sx={{
+              display: { xs: 'none', md: 'flex' },
+              width: '33%',
+              justifyContent: 'flex-end'
+            }}
+          >
             <Button
               sx={{ color: '#fff' }}
               href='https://twitter.com/Rich_Carrigan'
@@ -141,6 +160,15 @@ export default function Header(props) {
               aria-label='Github'
             >
               <GitHubIcon />
+            </Button>
+            <Button
+              sx={{ color: '#fff' }}
+              href='https://blog.richardcarrigan.dev'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Blog'
+            >
+              <BookIcon />
             </Button>
           </Box>
         </Toolbar>
