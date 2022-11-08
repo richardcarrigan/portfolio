@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
+
 :root {
   --bg-primary: 24, 115, 195;
   --mdc-theme-primary: rgb(var(--bg-primary));
 }
 
-@font-face {
-  font-family: 'Didot';
-  src: url('./assets/ufonts.com_didot.eot');
-  src: url('./assets/ufonts.com_didot.woff') format('woff');
-  src: url('./assets/ufonts.com_didot.ttf') format('truetype');
+.MuiTypography-root {
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 a {
@@ -21,18 +22,17 @@ a {
 
 body {
   background-color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6 {
+  font-family: 'Stint Ultra Expanded', cursive;
 }
 
 html {
@@ -70,19 +70,21 @@ section * {
 #contact form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 900px;
 }
 #contact form > div,
 #contact form > button {
   margin-bottom: 15px;
 }
 
-#landing {
+#about {
   padding-top: 100px;
 }
-#landing h1 {
+#about h1 {
   font-size: 3em;
 }
-#landing #seattle {
+#about #seattle {
   border-radius: 5px;
   width: 100%;
   height: auto;
@@ -108,12 +110,7 @@ section * {
     max-width: 45%;
   }
 
-  #contact form {
-    margin: 0 auto;
-    width: 60%;
-  }
-
-  #landing #seattle {
+  #about #seattle {
     margin: 0 auto;
     width: 60%;
   }

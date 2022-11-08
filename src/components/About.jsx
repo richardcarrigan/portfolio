@@ -2,9 +2,9 @@ import { Button } from '@mui/material';
 import resumeFile from '../assets/richard_carrigan_software_developer_resume.pdf';
 import avatarImage from '../assets/avatar.jpg';
 
-export default function Landing() {
+export default function About() {
   return (
-    <section id='landing'>
+    <section id='about'>
       <img src={avatarImage} alt='Avatar' className='avatar' />
       <p>
         Hi, I'm Richard. I've been working in the Seattle area as the Technical

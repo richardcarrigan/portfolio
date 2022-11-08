@@ -21,7 +21,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';
 
 const drawerWidth = 240;
-const navItems = ['Work', 'Contact'];
+const navItems = ['About', 'Work', 'Contact'];
 
 export default function Header(props) {
   const { window } = props;

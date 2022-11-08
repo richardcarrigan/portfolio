@@ -1,20 +1,48 @@
-import { CssBaseline, Box } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box, createTheme } from '@mui/material';
 
 import Header from './components/Header';
-import Landing from './components/Landing';
+import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Stint Ultra Expanded, Pontano Sans, sans-serif, cursive'
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'Pontano Sans';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
+        }
+        @font-face {
+          font-family: 'Stint Ultra Expanded', cursive;
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+        }
+      `
+    }
+  }
+});
 
 function App() {
   return (
     <div className='App'>
-      <CssBaseline />
-      <Header />
-      <Box component='main'>
-        <Landing />
-        <Work />
-        <Contact />
-      </Box>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <Box component='main'>
+          <About />
+          <Work />
+          <Contact />
+        </Box>
+      </ThemeProvider>
     </div>
   );
 }
