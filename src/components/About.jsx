@@ -1,5 +1,3 @@
-import { Button } from '@mui/material';
-import resumeFile from '../assets/richard_carrigan_software_developer_resume.pdf';
 import avatarImage from '../assets/avatar.jpg';
 
 export default function About() {
@@ -25,11 +23,6 @@ export default function About() {
         well as various other tools such as TypeScript, SASS, Node.js, Express,
         SQL, and MongoDB.
       </p>
-      <a href={resumeFile} target='_blank' rel='noreferrer'>
-        <Button variant='contained' id='resume-btn'>
-          View Resume
-        </Button>
-      </a>
     </section>
   );
 }

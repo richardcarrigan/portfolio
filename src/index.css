@@ -90,9 +90,9 @@ section * {
   height: auto;
 }
 
-#last-name {
+/* #last-name {
   font-weight: bold;
-}
+} */
 
 #work {
   background-color: rgba(var(--bg-primary), 0.25);

@@ -34,7 +34,7 @@ export default function Header(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant='h6' sx={{ my: 2 }}>
-        Richard <span id='last-name'>Carrigan</span>
+        Richard Carrigan
       </Typography>
       <Divider />
       <List>
@@ -103,8 +103,12 @@ export default function Header(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-            Richard <span id='last-name'>Carrigan</span>
+          <Typography
+            variant='h6'
+            component='div'
+            sx={{ fontWeight: 'bold', flexGrow: 1 }}
+          >
+            Richard Carrigan
           </Typography>
           <Box
             sx={{
