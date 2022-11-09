@@ -25,12 +25,12 @@ export default function Projects() {
           <Typography gutterBottom variant='h6' component='div'>
             Pers
           </Typography>
-          <Typography variant='body2' color='text.secondary'>
+          <p>
             A financial app I'm currently building so I can track forecasted
             income and expenses, allowing me to see exactly how much money I'll
             have on any given date. Uses React, Apollo GraphQL (client and
             server), Node.js, and MongoDB.
-          </Typography>
+          </p>
         </CardContent>
         <CardActions>
           <a href='https://github.com/richardcarrigan/pers'>
@@ -55,10 +55,10 @@ export default function Projects() {
           <Typography gutterBottom variant='h6' component='div'>
             The MEAN Store
           </Typography>
-          <Typography variant='body2' color='text.secondary'>
+          <p>
             An e-commerce application using MongoDB, Express, Angular, and Node
             with a Material Design UI
-          </Typography>
+          </p>
         </CardContent>
         <CardActions>
           <a href='https://the-mean-store.herokuapp.com'>
@@ -88,10 +88,10 @@ export default function Projects() {
           <Typography gutterBottom variant='h6' component='div'>
             Richard's Weather
           </Typography>
-          <Typography variant='body2' color='text.secondary'>
+          <p>
             A weather app using the Geolocation and Open Weather API's, jQuery,
             and Bootstrap
-          </Typography>
+          </p>
         </CardContent>
         <CardActions>
           <a href='https://codepen.io/nihonjinboy85/full/LRWwxg'>
