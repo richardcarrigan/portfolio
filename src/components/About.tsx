@@ -2,8 +2,8 @@ import avatarImage from '../assets/avatar.jpg';
 
 export default function About() {
   return (
-    <section id='about'>
-      <img src={avatarImage} alt='Avatar' className='avatar' />
+    <section id="about">
+      <img src={avatarImage} alt="Avatar" className="avatar" />
       <p>
         Hi, I'm Richard, a full-stack developer. I'm currently the Lead
         Technical Program Manager at Microsoft, where I've been building
@@ -12,14 +12,14 @@ export default function About() {
         non-traditional backgrounds find employment in tech. Before getting to
         work with this awesome team, I was responsible for maintaining a couple
         of branded product websites,{' '}
-        <a href='https://www.triad-orbit.com' target='_blank' rel='noreferrer'>
+        <a href="https://www.triad-orbit.com" target="_blank" rel="noreferrer">
           Triad-Orbit Advanced Stand Systems
         </a>{' '}
         and{' '}
         <a
-          href='https://www.accessbagsandcases.com'
-          target='_blank'
-          rel='noreferrer'
+          href="https://www.accessbagsandcases.com"
+          target="_blank"
+          rel="noreferrer"
         >
           Access Bags and Cases
         </a>
