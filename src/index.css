@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
 
 :root {
   --bg-primary: 24, 115, 195;
   --mdc-theme-primary: rgb(var(--bg-primary));
-}
-
-.MuiTypography-root {
-  font-family: 'Pontano Sans', sans-serif;
 }
 
 * {
@@ -24,15 +19,6 @@ body {
   background-color: whitesmoke;
   margin: 0;
   padding: 0;
-}
-
-.MuiTypography-h1,
-.MuiTypography-h2,
-.MuiTypography-h3,
-.MuiTypography-h4,
-.MuiTypography-h5,
-.MuiTypography-h6 {
-  font-family: 'Stint Ultra Expanded', cursive;
 }
 
 html {

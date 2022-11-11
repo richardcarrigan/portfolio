@@ -23,9 +23,9 @@ export default function About() {
         >
           Access Bags and Cases
         </a>
-        . While I didn't get to do a ton of development work, debugging UI bugs
-        allowed me to dramatically improve my responsive and cross-browser,
-        cross-platform design skills.
+        . While I didn't get to do a ton of development work, debugging UI
+        issues allowed me to dramatically improve my responsive and
+        cross-browser, cross-platform design skills.
       </p>
       <p>
         But I wasn't always a developer. In fact, as recently as 2016, I was
@@ -42,14 +42,14 @@ export default function About() {
       </p>
       <p>
         Since then, I've gotten to work with some great tech, such as React,
-        GraphQL (client and server), Microsoft Azure, Azure DevOps CI/CD, and
-        even the low/no-code Power Platform by Microsoft. Regardless of the tech
-        stack, I love having the ability to help people achieve their business
-        and personal goals easier. Currently, I'm working on Pers, a personal
-        financial management app that lets users add upcoming income and
-        expenses, so they can see how they sit financially at any future point
-        in time. Feel free to check it out below. It's still a work in progress,
-        but I'd love to hear what you think.
+        GraphQL (client and server), Typescript, Microsoft Azure, Azure DevOps
+        CI/CD, and even the low/no-code Power Platform by Microsoft. Regardless
+        of the tech stack, I love having the ability to help people achieve
+        their business and personal goals easier. Currently, I'm working on
+        Pers, a personal financial management app that lets users add upcoming
+        income and expenses, so they can see how they sit financially at any
+        future point in time. Feel free to check it out below. It's still a work
+        in progress, but I'd love to hear what you think.
       </p>
     </section>
   );

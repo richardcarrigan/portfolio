@@ -13,18 +13,11 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
-          font-family: 'Pontano Sans';
+          font-family: 'Stint Ultra Expanded', 'Pontano Sans', sans-serif, cursive;
           font-style: normal;
           font-display: swap;
           font-weight: 400;
           src: url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
-        }
-        @font-face {
-          font-family: 'Stint Ultra Expanded', cursive;
-          font-style: normal;
-          font-display: swap;
-          font-weight: 400;
-          src: url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
         }
       `
     }
