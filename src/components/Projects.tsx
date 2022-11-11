@@ -17,9 +17,9 @@ export default function Projects() {
           height='315'
           src='https://www.youtube.com/embed/x6m4_7nddz4'
           title='YouTube video player'
-          frameborder='0'
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen='true'
+          allowFullScreen={true}
         />
         <CardContent>
           <Typography gutterBottom variant='h6' component='div'>
@@ -47,9 +47,9 @@ export default function Projects() {
           height='315'
           src='https://www.youtube.com/embed/o1Mbk7e-F90'
           title='YouTube video player'
-          frameborder='0'
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen='true'
+          allowFullScreen={true}
         />
         <CardContent>
           <Typography gutterBottom variant='h6' component='div'>
@@ -80,9 +80,9 @@ export default function Projects() {
           height='315'
           src='https://www.youtube.com/embed/l8f5VuLc2XE'
           title='YouTube video player'
-          frameborder='0'
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen='true'
+          allowFullScreen={true}
         />
         <CardContent>
           <Typography gutterBottom variant='h6' component='div'>
