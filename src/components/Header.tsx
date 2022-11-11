@@ -23,8 +23,7 @@ import BookIcon from '@mui/icons-material/Book';
 const drawerWidth = 240;
 const navItems = ['About', 'Work', 'Contact'];
 
-export default function Header(props) {
-  const { window } = props;
+export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -48,7 +47,7 @@ export default function Header(props) {
           </ListItem>
         ))}
       </List>
-      <div class='social'>
+      <div className='social'>
         <Link
           href='https://twitter.com/Rich_Carrigan'
           target='_blank'
@@ -84,9 +83,6 @@ export default function Header(props) {
       </div>
     </Box>
   );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -179,7 +175,6 @@ export default function Header(props) {
       </AppBar>
       <Box component='nav'>
         <Drawer
-          container={container}
           variant='temporary'
           open={mobileOpen}
           onClose={handleDrawerToggle}
