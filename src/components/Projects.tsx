@@ -61,7 +61,7 @@ export default function Projects() {
           </p>
         </CardContent>
         <CardActions>
-          <a href="https://the-mean-store.herokuapp.com">
+          <a href="https://ecommerce-mean-app.onrender.com">
             <Button className="mdc-card__action mdc-card__action--button">
               Demo
             </Button>
