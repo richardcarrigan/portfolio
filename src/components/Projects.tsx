@@ -4,7 +4,7 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Button,
+  Button
 } from '@mui/material';
 
 export default function Projects() {
