@@ -6,7 +6,7 @@
       "error",
       {
         "endOfLine": "auto",
-        "trailingComma": "es5",
+        "trailingComma": "none",
         "singleQuote": true,
         "tabWidth": 2
       }

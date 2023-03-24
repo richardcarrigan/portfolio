@@ -8,6 +8,10 @@
 * {
   box-sizing: border-box;
   font-family: 'Pontano Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -15,10 +19,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 body {
   background-color: whitesmoke;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -26,37 +32,43 @@ html {
 }
 
 p {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
   text-indent: 10%;
+  margin-block-end: 1rem;
+}
+
+p>a:hover,
+p>a:focus {
+  color: black;
+  background-color: rgba(var(--bg-primary), 0.5);
 }
 
 section {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 50px 10%;
+  padding: 3rem 10%;
 }
 
 section * {
-  max-width: 2160px;
+  max-width: 90rem;
 }
 
 .avatar {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 10rem;
+  width: 10rem;
+  margin-block: 1rem;
 }
 
-.projects > div {
-  margin-bottom: 15px;
+.projects>div {
+  margin-block-end: 1rem;
 }
+
 .social {
   display: flex;
   justify-content: space-around;
   position: absolute;
   bottom: 0;
-  width: 100%;
 }
 
 #contact form {
@@ -65,21 +77,14 @@ section * {
   width: 100%;
   max-width: 900px;
 }
-#contact form > div,
-#contact form > button {
-  margin-bottom: 15px;
+
+#contact form>div,
+#contact form>button {
+  margin-block-end: 1rem;
 }
 
 #about {
-  padding-top: 100px;
-}
-#about h1 {
-  font-size: 3em;
-}
-#about #seattle {
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
+  padding-block-start: 5rem;
 }
 
 #work {
@@ -91,15 +96,11 @@ section * {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-block-start: 3rem;
     width: 100%;
   }
-  .projects > div {
-    max-width: 45%;
-  }
 
-  #about #seattle {
-    margin: 0 auto;
-    width: 60%;
+  .projects>div {
+    width: 45%;
   }
 }

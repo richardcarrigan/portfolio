@@ -6,13 +6,12 @@ import {
   Divider,
   Drawer,
   IconButton,
-  Link,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
   Toolbar,
-  Typography,
+  Typography
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -20,7 +19,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';
 
-const drawerWidth = 240;
+const drawerWidth = 256;
 const navItems = ['About', 'Work', 'Contact'];
 
 export default function Header() {
@@ -39,47 +38,48 @@ export default function Header() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <Button href={`#${item.toLowerCase()}`}>
-                <ListItemText primary={item} />
-              </Button>
+            <ListItemButton
+              href={`#${item.toLowerCase()}`}
+              sx={{ textAlign: 'center' }}
+            >
+              <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <div className="social">
-        <Link
+        <Button
           href="https://twitter.com/Rich_Carrigan"
           target="_blank"
           rel="noreferrer"
           aria-label="Twitter"
         >
           <TwitterIcon />
-        </Link>
-        <Link
+        </Button>
+        <Button
           href="https://www.linkedin.com/in/richardcarrigan"
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn"
         >
           <LinkedInIcon />
-        </Link>
-        <Link
+        </Button>
+        <Button
           href="https://github.com/richardcarrigan"
           target="_blank"
           rel="noreferrer"
           aria-label="Github"
         >
           <GitHubIcon />
-        </Link>
-        <Link
+        </Button>
+        <Button
           href="https://blog.richardcarrigan.dev"
           target="_blank"
           rel="noreferrer"
           aria-label="Blog"
         >
           <BookIcon />
-        </Link>
+        </Button>
       </div>
     </Box>
   );
@@ -88,7 +88,10 @@ export default function Header() {
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav">
         <Toolbar
-          sx={{ display: { md: 'flex' }, justifyContent: 'space-between' }}
+          sx={{
+            display: { md: 'flex' },
+            justifyContent: 'space-between'
+          }}
         >
           <IconButton
             color="inherit"
@@ -102,75 +105,76 @@ export default function Header() {
           <Typography
             variant="h6"
             component="div"
-            sx={{ fontWeight: 'bold', flexGrow: 1 }}
+            sx={{ fontWeight: 'bold', width: { md: '33%' } }}
           >
             Richard Carrigan
           </Typography>
-          <Box
+          <List
             sx={{
               display: { xs: 'none', md: 'flex' },
-              width: '33%',
-              justifyContent: 'center',
+              flexDirection: 'row',
+              width: '33%'
             }}
           >
             {navItems.map((item) => (
-              <Button
-                href={
-                  item.toLowerCase() === 'blog'
-                    ? `https://blog.richardcarrigan.dev`
-                    : `#${item.toLowerCase()}`
-                }
-                key={item}
-                sx={{ color: '#fff' }}
-              >
-                {item}
-              </Button>
+              <ListItem key={item} disablePadding>
+                <ListItemButton
+                  href={`#${item.toLowerCase()}`}
+                  sx={{ textAlign: 'center' }}
+                >
+                  <ListItemText primary={item} />
+                </ListItemButton>
+              </ListItem>
             ))}
-          </Box>
-          <Box
+          </List>
+          <List
             sx={{
               display: { xs: 'none', md: 'flex' },
               width: '33%',
-              justifyContent: 'flex-end',
+              justifyContent: 'flex-end'
             }}
           >
-            <Button
-              sx={{ color: '#fff' }}
-              href="https://twitter.com/Rich_Carrigan"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Twitter"
-            >
-              <TwitterIcon />
-            </Button>
-            <Button
-              sx={{ color: '#fff' }}
-              href="https://www.linkedin.com/in/richardcarrigan"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon />
-            </Button>
-            <Button
-              sx={{ color: '#fff' }}
-              href="https://github.com/richardcarrigan"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Github"
-            >
-              <GitHubIcon />
-            </Button>
-            <Button
-              sx={{ color: '#fff' }}
-              href="https://blog.richardcarrigan.dev"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Blog"
-            >
-              <BookIcon />
-            </Button>
-          </Box>
+            <ListItem sx={{ flexBasis: 0 }} disablePadding>
+              <ListItemButton
+                href="https://twitter.com/Rich_Carrigan"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Twitter"
+              >
+                <TwitterIcon />
+              </ListItemButton>
+            </ListItem>
+            <ListItem sx={{ flexBasis: 0 }} disablePadding>
+              <ListItemButton
+                href="https://www.linkedin.com/in/richardcarrigan"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <LinkedInIcon />
+              </ListItemButton>
+            </ListItem>
+            <ListItem sx={{ flexBasis: 0 }} disablePadding>
+              <ListItemButton
+                href="https://github.com/richardcarrigan"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
+                <GitHubIcon />
+              </ListItemButton>
+            </ListItem>
+            <ListItem sx={{ flexBasis: 0 }} disablePadding>
+              <ListItemButton
+                href="https://blog.richardcarrigan.dev"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Blog"
+              >
+                <BookIcon />
+              </ListItemButton>
+            </ListItem>
+          </List>
         </Toolbar>
       </AppBar>
       <Box component="nav">
@@ -179,14 +183,14 @@ export default function Header() {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true // Better open performance on mobile.
           }}
           sx={{
             display: { xs: 'block', md: 'none' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
-              width: drawerWidth,
-            },
+              width: drawerWidth
+            }
           }}
         >
           {drawer}
