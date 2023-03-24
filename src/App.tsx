@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Stint Ultra Expanded, Pontano Sans, sans-serif, cursive',
+    fontFamily: 'Stint Ultra Expanded, Pontano Sans, sans-serif, cursive'
   },
   components: {
     MuiCssBaseline: {
@@ -19,9 +19,9 @@ const theme = createTheme({
           font-weight: 400;
           src: url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Stint+Ultra+Expanded&display=swap');
         }
-      `,
-    },
-  },
+      `
+    }
+  }
 });
 
 function App() {
