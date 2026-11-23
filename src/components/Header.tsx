@@ -73,7 +73,7 @@ export default function Header() {
           <GitHubIcon />
         </Button>
         <Button
-          href="https://blog.richardcarrigan.dev"
+          href="https://richardcarrigan.hashnode.dev"
           target="_blank"
           rel="noreferrer"
           aria-label="Blog"
